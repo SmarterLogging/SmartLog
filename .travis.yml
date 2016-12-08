@@ -1,6 +1,14 @@
 language: csharp
 mono: none
-dotnet: 1.0.0-preview2-003131
+dotnet: 1.0.1
 dist: trusty
 sudo: required
-solution: src/SmartLog.sln
+
+script:
+  - cd src/
+  - dotnet restore && npm install
+  - dotnet --verbose build -c Release
+  - gulp compile
+  - gulp clean:prod
+  - ls ./wwwroot/js
+  - dotnet bundle
