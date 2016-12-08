@@ -1,0 +1,2 @@
+# SmartLog
+Smart Application Logging
