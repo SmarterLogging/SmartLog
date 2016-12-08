@@ -1,6 +1,4 @@
 language: csharp
-solution: src/SmartLog.sln
-install:
-  - nuget restore src/SmartLog.sln
-script:
-  - xbuild /p:Configuration=Release src/SmartLog.sln
+solution: SmartLog.sln
+mono: none
+dotnet: 1.0.1
