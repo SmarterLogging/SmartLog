@@ -1,4 +1,4 @@
 language: csharp
 solution: SmartLog.sln
 mono: none
-dotnet: 1.0.1
+dotnet: 1.0.0-preview2-003131
