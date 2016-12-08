@@ -5,10 +5,6 @@ dist: trusty
 sudo: required
 
 script:
-  - cd src/
+  - cd src/SmartLog.Website/
   - dotnet restore && npm install
   - dotnet --verbose build -c Release
-  - gulp compile
-  - gulp clean:prod
-  - ls ./wwwroot/js
-  - dotnet bundle
